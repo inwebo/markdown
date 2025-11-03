@@ -2,6 +2,7 @@
     "name": "inwebo/markdown",
     "description": "A modern PHP markdown parser",
     "type": "library",
+    "version": "1.0.0",
     "require": {
         "php": "^8.3"
     },
