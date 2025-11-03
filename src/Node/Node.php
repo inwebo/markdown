@@ -7,6 +7,13 @@ namespace Inwebo\Markdown\Node;
 use Inwebo\Markdown\Parser\Matches;
 use Inwebo\Markdown\Token\Token;
 
+/**
+ * Class Node.
+ *
+ * Represents a single element (node) in the Markdown abstract syntax tree (AST).
+ * Each Node corresponds to a parsed Markdown token and may contain nested child nodes.
+ * Nodes are linked together to form a hierarchical representation of the Markdown document.
+ */
 class Node
 {
     protected ?Node $parent = null;

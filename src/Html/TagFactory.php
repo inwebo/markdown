@@ -9,6 +9,14 @@ use Inwebo\Markdown\Model\Iterator\RecursiveNodeIterator;
 use Inwebo\Markdown\Model\Iterator\RecursiveNodeIteratorIterator;
 use Inwebo\Markdown\Node\Node;
 
+/**
+ * Class TagFactory.
+ *
+ * The TagFactory class is responsible for generating HTML representations
+ * of Markdown nodes using a collection of HtmlTagInterface factories.
+ * It maps Markdown token types to their corresponding HTML tag factories
+ * and recursively builds HTML content for nested node structures.
+ */
 class TagFactory
 {
     /**
