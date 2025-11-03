@@ -27,7 +27,7 @@ class TagFactory
 
     public function getFactoryHtmlTag(Node $subject): HtmlTagInterface
     {
-        $factory = $this->factories->offsetGet($subject->getToken()->getType()->name);
+        $factory = @$this->factories->offsetGet($subject->getToken()->getType()->name);
 
         if (is_null($factory)) {
             throw new \UnexpectedValueException(sprintf('Html tag : %s not supported. Try to configure a HtmlFactory.', $subject->getToken()->getType()->name));
